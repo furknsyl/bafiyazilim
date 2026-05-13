@@ -152,12 +152,20 @@ p {
 
 .nav-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 80px;
 }
 
+.nav-actions {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .logo {
+    flex: 1;
     font-size: 1.5rem;
     font-weight: 800;
     text-decoration: none;
@@ -199,6 +207,25 @@ p {
 }
 
 .nav-links a.active {
+    color: var(--accent-primary);
+}
+
+.lang-btn {
+    background: none;
+    border: 2px solid var(--border-color);
+    color: var(--text-primary);
+    cursor: pointer;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    font-family: inherit;
+    font-size: 0.8rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    letter-spacing: 0.05em;
+}
+
+.lang-btn:hover {
+    border-color: var(--accent-primary);
     color: var(--accent-primary);
 }
 
