@@ -82,7 +82,10 @@ function setLanguage(lang) {
     currentLang = lang;
     localStorage.setItem('lang', lang);
     document.documentElement.setAttribute('lang', lang);
-    document.getElementById('lang-toggle').textContent = lang === 'tr' ? 'EN' : 'TR';
+
+    const label = lang === 'tr' ? 'EN' : 'TR';
+    document.getElementById('lang-toggle').textContent = label;
+    document.getElementById('lang-toggle-mobile').textContent = label;
 
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
@@ -96,6 +99,10 @@ function setLanguage(lang) {
 }
 
 document.getElementById('lang-toggle').addEventListener('click', () => {
+    setLanguage(currentLang === 'tr' ? 'en' : 'tr');
+});
+
+document.getElementById('lang-toggle-mobile').addEventListener('click', () => {
     setLanguage(currentLang === 'tr' ? 'en' : 'tr');
 });
 
@@ -149,16 +156,21 @@ const savedTheme = localStorage.getItem('theme') || 'dark';
 htmlElement.setAttribute('data-theme', savedTheme);
 updateIcons(savedTheme);
 
-themeToggleBtn.addEventListener('click', () => {
+function toggleTheme() {
     const newTheme = htmlElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
     htmlElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
     updateIcons(newTheme);
-});
+}
+
+themeToggleBtn.addEventListener('click', toggleTheme);
+document.getElementById('theme-toggle-mobile').addEventListener('click', toggleTheme);
 
 function updateIcons(theme) {
     sunIcon.classList.toggle('hidden', theme !== 'dark');
     moonIcon.classList.toggle('hidden', theme === 'dark');
+    document.getElementById('sun-icon-mobile').classList.toggle('hidden', theme !== 'dark');
+    document.getElementById('moon-icon-mobile').classList.toggle('hidden', theme === 'dark');
 }
 
 // ─── Mobile Menu ─────────────────────────────────────────────────────────────
