@@ -117,39 +117,138 @@
                 <p class="section-desc" data-i18n="projects_desc">Geliştirdiğimiz bazı modern web çözümleri.</p>
             </div>
             <div class="projects-grid">
+
+                <!-- Diş Kliniği -->
                 <div class="project-card fade-in-up delay-1">
-                    <div class="project-img bg-gradient-3"></div>
+                    <div class="project-img">
+                        <div class="proj-visual pv--dental">
+                            <div class="pv-circle pv-circle--1"></div>
+                            <div class="pv-circle pv-circle--2"></div>
+                            <svg class="pv-svg" viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M28 36C28 19 40 10 50 10C60 10 72 19 72 36C72 53 68 65 65 74L64 94C63 99 57 99 57 92L55 74C55 69 45 69 45 74L43 92C43 99 37 99 36 94L35 74C32 65 28 53 28 36Z" fill="white" opacity="0.96"/>
+                                <path d="M37 48L47 58L63 38" stroke="#0284c7" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M35 28C38 22 44 19 50 20" stroke="rgba(255,255,255,0.5)" stroke-width="3.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
                     <div class="project-info">
-                        <h3 class="project-title" data-i18n="proj1_title">E-Ticaret Platformu</h3>
-                        <p class="project-desc" data-i18n="proj1_desc">Modern bir alışveriş deneyimi sunan, yüksek performanslı e-ticaret altyapısı.</p>
+                        <h3 class="project-title" data-i18n="proj_dental_title">Diş Kliniği Sitesi</h3>
+                        <p class="project-desc" data-i18n="proj_dental_desc">Randevu sistemi entegre, güven uyandıran modern bir klinik tanıtım sitesi.</p>
+                        <div class="tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Güzellik & Spa -->
+                <div class="project-card fade-in-up delay-2">
+                    <div class="project-img">
+                        <div class="proj-visual pv--beauty">
+                            <div class="pv-circle pv-circle--1"></div>
+                            <div class="pv-circle pv-circle--2"></div>
+                            <svg class="pv-svg" viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M43 50C43 50 43 30 50 12C57 30 57 50 57 50Z" fill="white" opacity="0.97"/>
+                                <rect x="39" y="50" width="22" height="22" rx="1" fill="rgba(255,255,255,0.82)"/>
+                                <rect x="36" y="72" width="28" height="28" rx="6" fill="white" opacity="0.96"/>
+                                <path d="M36 72L64 72" stroke="rgba(236,72,153,0.3)" stroke-width="1.5"/>
+                                <path d="M15 33L17 26L19 33L26 35L19 37L17 44L15 37L8 35Z" fill="rgba(255,255,255,0.75)"/>
+                                <path d="M78 58L80 53L82 58L87 60L82 62L80 67L78 62L73 60Z" fill="rgba(255,255,255,0.6)"/>
+                                <circle cx="76" cy="30" r="3.5" fill="rgba(255,255,255,0.5)"/>
+                                <circle cx="20" cy="75" r="2.5" fill="rgba(255,255,255,0.4)"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title" data-i18n="proj_beauty_title">Güzellik & Spa Sitesi</h3>
+                        <p class="project-desc" data-i18n="proj_beauty_desc">Şık ve zarif tasarımıyla hizmetleri öne çıkaran güzellik merkezi platformu.</p>
+                        <div class="tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">Figma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Diyetisyen -->
+                <div class="project-card fade-in-up delay-3">
+                    <div class="project-img">
+                        <div class="proj-visual pv--diet">
+                            <div class="pv-circle pv-circle--1"></div>
+                            <div class="pv-circle pv-circle--2"></div>
+                            <svg class="pv-svg" viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M50 24C50 24 50 14 57 8" stroke="white" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.9"/>
+                                <path d="M50 20C56 12 68 10 61 7C61 7 52 14 50 20Z" fill="rgba(255,255,255,0.85)"/>
+                                <path d="M20 46C17 33 26 20 37 19C42 18 46 21 50 23C54 21 58 18 63 19C74 20 83 33 80 46C76 63 66 82 55 92C52 95 48 95 45 92C34 82 24 63 20 46Z" fill="white" opacity="0.96"/>
+                                <path d="M30 36C33 29 41 26 47 28" stroke="rgba(255,255,255,0.5)" stroke-width="3.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title" data-i18n="proj_diet_title">Diyetisyen Platformu</h3>
+                        <p class="project-desc" data-i18n="proj_diet_desc">Online randevu ve diyet programı takibi sunan sağlıklı yaşam platformu.</p>
+                        <div class="tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- E-Ticaret -->
+                <div class="project-card fade-in-up delay-4">
+                    <div class="project-img">
+                        <div class="proj-visual pv--ecom">
+                            <div class="pv-circle pv-circle--1"></div>
+                            <div class="pv-circle pv-circle--2"></div>
+                            <svg class="pv-svg" viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35 44C35 27 65 27 65 44" stroke="white" stroke-width="5.5" stroke-linecap="round" fill="none" opacity="0.95"/>
+                                <rect x="15" y="44" width="70" height="58" rx="9" fill="white" opacity="0.96"/>
+                                <rect x="26" y="60" width="48" height="5" rx="2.5" fill="rgba(194,65,12,0.15)"/>
+                                <rect x="26" y="70" width="36" height="4" rx="2" fill="rgba(194,65,12,0.1)"/>
+                                <rect x="26" y="82" width="19" height="13" rx="3" fill="rgba(249,115,22,0.2)"/>
+                                <rect x="49" y="82" width="13" height="13" rx="3" fill="rgba(249,115,22,0.15)"/>
+                                <rect x="66" y="82" width="13" height="13" rx="3" fill="rgba(249,115,22,0.1)"/>
+                                <path d="M81 14L83 8L85 14L91 16L85 18L83 24L81 18L75 16Z" fill="rgba(255,255,255,0.7)"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title" data-i18n="proj_ecom_title">E-Ticaret Platformu</h3>
+                        <p class="project-desc" data-i18n="proj_ecom_desc">Modern bir alışveriş deneyimi sunan, yüksek performanslı e-ticaret altyapısı.</p>
                         <div class="tags">
                             <span class="tag">React</span>
                             <span class="tag">Node.js</span>
                         </div>
                     </div>
                 </div>
-                <div class="project-card fade-in-up delay-2">
-                    <div class="project-img bg-gradient-1"></div>
-                    <div class="project-info">
-                        <h3 class="project-title" data-i18n="proj2_title">Mobil Uygulama Arayüzü</h3>
-                        <p class="project-desc" data-i18n="proj2_desc">Kullanıcı dostu, animasyonlu ve etkileşimli bir finans uygulaması tasarımı.</p>
-                        <div class="tags">
-                            <span class="tag">UI/UX</span>
-                            <span class="tag">Figma</span>
+
+                <!-- Kafe & Restoran -->
+                <div class="project-card fade-in-up delay-5">
+                    <div class="project-img">
+                        <div class="proj-visual pv--cafe">
+                            <div class="pv-circle pv-circle--1"></div>
+                            <div class="pv-circle pv-circle--2"></div>
+                            <svg class="pv-svg" viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M36 30C34 24 38 21 36 16" stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+                                <path d="M50 26C48 19 52 16 50 11" stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.75"/>
+                                <path d="M64 30C62 24 66 21 64 16" stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+                                <path d="M22 42L30 90C31 96 36 98 50 98C64 98 69 96 70 90L78 42Z" fill="white" opacity="0.96"/>
+                                <path d="M71 54C85 54 90 62 90 69C90 76 85 82 71 82" stroke="white" stroke-width="5.5" stroke-linecap="round" fill="none" opacity="0.88"/>
+                                <ellipse cx="50" cy="99" rx="40" ry="7" fill="rgba(255,255,255,0.35)"/>
+                                <ellipse cx="50" cy="60" rx="18" ry="9" fill="rgba(120,53,15,0.25)"/>
+                                <path d="M43 58C43 55 46 53 50 56C54 53 57 55 57 58C57 62 50 67 50 67C50 67 43 62 43 58Z" fill="rgba(120,53,15,0.4)"/>
+                            </svg>
                         </div>
                     </div>
-                </div>
-                <div class="project-card fade-in-up delay-3">
-                    <div class="project-img bg-gradient-2"></div>
                     <div class="project-info">
-                        <h3 class="project-title" data-i18n="proj3_title">Kurumsal Web Sitesi</h3>
-                        <p class="project-desc" data-i18n="proj3_desc">SEO uyumlu, hızlı ve şık bir kurumsal kimlik projesi.</p>
+                        <h3 class="project-title" data-i18n="proj_cafe_title">Kafe & Restoran Sitesi</h3>
+                        <p class="project-desc" data-i18n="proj_cafe_desc">Menü yönetimi ve rezervasyon özellikli şık kafe ve restoran platformu.</p>
                         <div class="tags">
                             <span class="tag">HTML/CSS</span>
                             <span class="tag">JS</span>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
